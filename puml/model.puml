@@ -1,0 +1,20 @@
+@startuml
+set namespaceSeparator none
+hide method
+namespace gallery.sercice.domain {
+    class FileData{
+        - id : String
+        - value: byte[]
+        - fileId : String
+        - file: File
+    }
+    FileData *-left-> File: file
+    class File{
+        - id : String
+        - mimeType : String
+        - fileName : String
+        - fileZice : Long
+
+    }
+}
+@enduml
